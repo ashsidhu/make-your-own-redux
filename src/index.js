@@ -4,11 +4,13 @@ import App from './components/App';
 import './index.css';
 import todoApp from './reducers'
 
-// these will be implemented by us
 import { Provider } from 'react-redux'
+
+// createStore is implemented by self
+// import { createStore } from 'redux'
 import { createStore } from './redux'
 
-let store = createStore(todoApp)
+const store = createStore(todoApp)
 
 ReactDOM.render(
   <Provider store={store}>
